@@ -1,0 +1,14 @@
+.header {
+    padding: 5rem 0;
+    &__logo {
+        @include text($font-base, 600, 2.4rem, 2.8rem, $color-dark)
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+

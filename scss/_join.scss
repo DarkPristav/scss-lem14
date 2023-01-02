@@ -1,0 +1,57 @@
+.join {
+
+    &__block {
+        background-color: $color-bg;
+        border-radius: 1rem;
+        padding: 8rem 22rem;
+        margin-bottom: 13rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 5rem;
+        @include text ($font-base, 700, 3.6rem, 4.2rem, $color-white);
+    }
+
+    &__search {
+        left: 20%;
+        background-color: $color-grey;
+        max-width: 72rem;
+        width: 100%;
+        border-radius: 5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        margin: 2rem 27rem 2rem 3rem;
+        border-color: $color-grey;
+            background-color: $color-grey;
+            border-width: 0;
+        @include text ($font-base, 400, 1.6rem, 1.9rem, $color-join);
+            
+                &::placeholder {
+                    color: rgba($color-join, 0.7);
+                }
+    }
+
+    &__subscrible {
+        background: $color-blue;
+        border-radius: 2.2rem;
+        padding: 1rem 2.5rem;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-bg;
+    
+            .join__a {
+                color: $color-white;
+            }
+        }
+    }
+
+    &__a {
+        @include text ($font-base, 600, 2rem, 2.3rem, $color-white);
+        
+    }
+}
+

@@ -1,0 +1,79 @@
+.sevices {
+    &__blocks {
+        margin-bottom: 11rem;
+    }
+    &__block {
+        transition: $transition;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $color-grey;
+        border-radius: 1.5rem;
+        &:hover{
+            background-color: $color-blue;
+            .sevices__block-link {
+                    color: $color-white;
+            }
+            .sevices__block-arrow {
+                color: $color-white;
+            }
+            .title-secondary {
+                color: $color-white;
+            }
+            .desc-secondary {
+                color: $color-white;
+            }
+        }
+    }
+
+    &__block-active {
+        background-color: $color-blue;
+    }
+
+    &__block-img {
+        max-width: 11rem;
+        width: 100%;
+        margin-bottom: 2.6rem;
+        margin-top: 4.6rem;
+    }
+    &__block-link {
+        @include text ($font-base, 600, 1.6rem, 1.9rem, $color-blue);
+        text-decoration: underline;
+    }
+    &__block-arrow {
+        @include text ($font-base, 600, 1.6rem, 1.9rem, $color-blue);
+    }
+    &__main-desc {
+        margin-top: 7rem;
+        margin-bottom: 12rem;
+    }
+    &__block-title {
+        margin-bottom: 1.7rem;
+    }
+    &__block-desc {
+        margin-bottom: 1.7rem;
+    }
+    &__link {
+        margin-bottom: 4.7rem;
+    }
+}
+
+.services-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11rem;
+}
+
+.link-active {
+    color: $color-white;
+}
+
+.arrow-active {
+    color: $color-white;
+}
+
+
+
